@@ -2,16 +2,7 @@
 
 SHELL = @SHELL@
 
-# Used by docdir.
-PACKAGE = opt-fuchsia
-
 prefix = @prefix@
-exec_prefix = @exec_prefix@
-bindir = @bindir@
-datarootdir = @datarootdir@
-sysconfdir = @sysconfdir@
-localstatedir = @localstatedir@
-docdir = @docdir@
 
 srcdir = @srcdir@
 VPATH = @srcdir@
@@ -20,19 +11,14 @@ DESTDIR =
 
 INSTALL = @INSTALL@
 
-BINFILES = \
-	opt-build \
-	opt-install \
-	opt-list-available \
-	opt-list-installed \
-	opt-uninstall
+PATCHFILES = \
+	$(srcdir)/patches/README \
+	$(srcdir)/patches/config.sub \
+	$(srcdir)/patches/*.patches \
+	$(srcdir)/patches/*.patch
 
-ETCFILES = \
-	opt-apply-patches.sh \
-	opt-build-world.sh \
-	opt-config.sh\
-	opt-make-root-tarballs.sh\
-	opt-world.list \
+SPECFILES = \
+	$(srcdir)/specs/*.spec
 
 all:
 	@echo "Nothing to do."
@@ -44,23 +30,15 @@ distclean:
 	rm -f Makefile config.log config.cache config.status
 
 install:
-	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)src/patches
-	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)src/specs
-	for f in $(BINFILES) ; \
+	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)$(prefix)/src/patches
+	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)$(prefix)/src/specs
+	for f in $(PATCHFILES) ; \
 	do \
-	  $(INSTALL) -m 0755 $(srcdir)/bin/$${f}.sh $(DESTDIR)$(bindir)/$$f ; \
+	  $(INSTALL) -m 0644 $$f $(DESTDIR)$(prefix)/src/patches/$$(basename $$f); \
 	done
-	for f in $(ETCFILES) ; \
+	for f in $(SPECFILES) ; \
 	do \
-	  $(INSTALL) -m 0644 $(srcdir)/etc/$$f $(DESTDIR)$(sysconfdir)/opt/$$f; \
-	done
-	for f in $(VARFILES) ; \
-	do \
-	  $(INSTALL) -m 0644 $(srcdir)/var/opt/$$f $(DESTDIR)$(localstatedir)/opt/$$f ; \
-	done
-	for f in $(DOCFILES) ; \
-	do \
-	  $(INSTALL) -m 0644 $(srcdir)/doc/$$f $(DESTDIR)$(docdir)/$$f ; \
+	  $(INSTALL) -m 0644 $$f $(DESTDIR)$(prefix)/src/specs/$$(basename $$f); \
 	done
 
 Makefile: Makefile.in config.status
