@@ -1,0 +1,4 @@
+# patch set for gcc
+# See ./README.
+ 
+patch:gcc-musl-local.patch

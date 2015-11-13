@@ -1,0 +1,4 @@
+# patch set for sudo
+# See ./README.
+ 
+patch:sudo-id-t.patch

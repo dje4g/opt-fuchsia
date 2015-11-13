@@ -1,0 +1,6 @@
+# patch set for emacs
+# See ./README.
+ 
+patch:emacs-musl.patch
+command:aclocal -I m4
+command:autoconf

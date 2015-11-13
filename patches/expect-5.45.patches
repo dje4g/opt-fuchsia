@@ -1,0 +1,4 @@
+# patch set for gmp
+# See ./README.
+ 
+replace:config.sub:tclconfig/config.sub

@@ -1,0 +1,5 @@
+# patch set for flex
+# See ./README.
+ 
+replace:config.sub:config.sub
+patch:flex-malloc.patch

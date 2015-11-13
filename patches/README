@@ -1,0 +1,15 @@
+# packages/patches
+
+# Syntax is one of:
+#
+# replace:dest-file:src-file
+# - dest-file is relative to the top of the source tree
+# - src-file is relative to opt/packages/patches
+#
+# patch:patch-file
+# - patch-file is relative to opt/packages/patches
+# - patch is applied with -p1 to SRCDIR [see etc/opt-build.sh]
+#
+# command:command-to-run
+# - run a command
+# - the command is run in the top level source directory with /bin/sh -c

@@ -1,0 +1,4 @@
+# patch set for automake
+# See ./README.
+ 
+replace:config.sub:lib/config.sub

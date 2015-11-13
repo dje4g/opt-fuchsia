@@ -1,0 +1,5 @@
+# patch set for lynx
+# See ./README.
+ 
+replace:config.sub:config.sub
+patch:lynx-use-openssl-incl.patch

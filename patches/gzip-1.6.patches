@@ -1,0 +1,6 @@
+# patch set for gbzip
+# See ./README.
+ 
+patch:gzip-fseeko.patch
+command:aclocal
+command:autoconf

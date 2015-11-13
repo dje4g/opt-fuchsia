@@ -1,0 +1,4 @@
+# patch set for pkg-config
+# See ./README.
+ 
+replace:config.sub:config.sub

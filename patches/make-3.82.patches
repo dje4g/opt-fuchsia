@@ -1,0 +1,4 @@
+# patch set for make
+# See ./README.
+ 
+replace:config.sub:config/config.sub

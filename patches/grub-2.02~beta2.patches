@@ -1,0 +1,4 @@
+# patch set for grub
+# See ./README.
+ 
+patch:grub-llseek.patch

@@ -1,0 +1,4 @@
+# patch set for mpfr
+# See ./README.
+ 
+replace:config.sub:config.sub

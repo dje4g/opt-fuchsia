@@ -1,0 +1,4 @@
+# patch set for strace
+# See ./README.
+ 
+patch:strace-ioctl.patch

@@ -1,0 +1,4 @@
+# patch set for mpc
+# See ./README.
+ 
+replace:config.sub:config.sub
