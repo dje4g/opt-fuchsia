@@ -3,8 +3,6 @@
 declare -r PKG_NAME=go-1.4.3
 declare -r PKG_TARBALL=go1.4.3.src.tar.gz
 declare -r PKG_SRC=go
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 declare -r PKG_BUILD_IN_SRC=yes
 
 # There is no configure step.

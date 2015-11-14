@@ -3,8 +3,6 @@
 declare -r PKG_NAME=perl-5.22.0
 declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
 declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 declare -r PKG_BUILD_IN_SRC=yes
 
 # perl has a differently named configure script, bleah

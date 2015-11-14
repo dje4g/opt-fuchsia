@@ -3,7 +3,6 @@
 declare -r PKG_NAME=binutils-2.24
 declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
 declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=none
 
 # --disable-werror shouldn't be needed for binutils releases.
 # Provide it anyway "just in case".

@@ -3,8 +3,6 @@
 declare -r PKG_NAME=curl-7.45.0
 declare -r PKG_TARBALL=${PKG_NAME}.tar.bz2
 declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 
 # Since we're cross-compiling we have to explicitly specify things that
 # configure would otherwise auto-determine.

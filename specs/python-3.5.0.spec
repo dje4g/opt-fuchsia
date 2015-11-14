@@ -3,8 +3,6 @@
 declare -r PKG_NAME=python-3.5.0
 declare -r PKG_TARBALL=Python-3.5.0.tar.xz
 declare -r PKG_SRC=Python-3.5.0
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 declare -r PKG_NATIVE_ONLY=yes
 
 # TODO(dje):

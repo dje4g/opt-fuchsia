@@ -3,8 +3,6 @@
 declare -r PKG_NAME=bzip2-1.0.6
 declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
 declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 declare -r PKG_BUILD_IN_SRC=yes
 
 # bzip2 doesn't have a configure script

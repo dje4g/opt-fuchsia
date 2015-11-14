@@ -3,8 +3,6 @@
 declare -r PKG_NAME=lsof-4.89
 declare -r PKG_TARBALL=lsof_4.89.tar.xz
 declare -r PKG_SRC=lsof_4.89/lsof_4.89_src
-declare -r PKG_PATCHES=none
-#${PKG_NAME}.patches
 declare -r PKG_BUILD_IN_SRC=yes
 
 pkg_configure() {
