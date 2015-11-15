@@ -6,7 +6,7 @@
 declare -r PKG_NAME=db
 declare -r PKG_VERSION=1.85
 declare -r PKG_TARBALL=${PKG_NAME}.${PKG_VERSION}.patched.tar.gz
-declare -r PKG_URL=file:${OPT_SRC_DIR}/${PKG_TARBALL}
+declare -r PKG_URL=file:/${OPT_SRC_DIR}/${PKG_TARBALL}
 declare -r PKG_SIG=md5sum:493a0ba5a82650c2dbd3af2b8d5593b5
 declare -r PKG_SRC=${PKG_NAME}.${PKG_VERSION}
 declare -r PKG_PATCHES=${PKG_NAME}.${PKG_VERSION}.patches
