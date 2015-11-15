@@ -1,8 +1,11 @@
 # python3 package spec
 
-declare -r PKG_NAME=python-3.5.0
-declare -r PKG_TARBALL=Python-3.5.0.tar.xz
-declare -r PKG_SRC=Python-3.5.0
+declare -r PKG_NAME=python
+declare -r PKG_VERSION=3.5.0
+declare -r PKG_TARBALL=Python-${PKG_VERSION}.tar.xz
+declare -r PKG_SRC=Python-${PKG_VERSION}
+declare -r PKG_URL=https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tar.xz
+declare -r PKG_SIG=md5sum:d149d2812f10cbe04c042232e7964171
 declare -r PKG_NATIVE_ONLY=yes
 
 # TODO(dje):

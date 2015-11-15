@@ -1,6 +1,7 @@
 # patch set for ssmtp
 # These patches come from the debian distribution.
 # https://packages.debian.org/stable/mail/ssmtp
+# http://mirrors.kernel.org/debian/pool/main/s/ssmtp/ssmtp_2.64-8.debian.tar.bz2
  
 patch:ssmtp-makefile.patch
 patch:ssmtp-04-508759-garbage.patch

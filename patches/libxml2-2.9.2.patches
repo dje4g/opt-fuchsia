@@ -1,0 +1,4 @@
+# patch set for libxml2
+
+patch:libxml2-lfs.patch
+patch:libxml2-musl.patch

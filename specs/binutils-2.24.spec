@@ -1,8 +1,9 @@
 # binutils package spec
 
-declare -r PKG_NAME=binutils-2.24
-declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
-declare -r PKG_SRC=${PKG_NAME}
+declare -r PKG_NAME=binutils
+declare -r PKG_VERSION=2.24
+declare -r PKG_TARBALL=${PKG_NAME}-${PKG_VERSION}.tar.gz
+declare -r PKG_URL=$OPT_URL_GNU/$PKG_NAME/$PKG_TARBALL
 
 # --disable-werror shouldn't be needed for binutils releases.
 # Provide it anyway "just in case".

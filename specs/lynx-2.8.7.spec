@@ -1,9 +1,12 @@
 # lynx package spec
 
-declare -r PKG_NAME=lynx-2.8.7
-declare -r PKG_TARBALL=lynx2.8.7rel.2.tar.gz
-declare -r PKG_SRC=lynx2-8-7
-declare -r PKG_PATCHES=${PKG_NAME}.patches
+declare -r PKG_NAME=lynx
+declare -r PKG_VERSION=2.8.7
+declare -r PKG_TARBALL=${PKG_NAME}2.8.7rel.2.tar.gz
+declare -r PKG_URL=http://ftp.isc.org/lynx/current/lynx2.8.7rel.2.tar.gz
+declare -r PKG_SIG=md5sum:e36d70f3f09b2d502055ca67f09e363c
+declare -r PKG_SRC=${PKG_NAME}2-8-7
+declare -r PKG_PATCHES=${PKG_NAME}-${PKG_VERSION}.patches
 
 # lynx's configure won't look for openssl unless we explicitly tell it
 # to use pkg-config.

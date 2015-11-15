@@ -1,8 +1,11 @@
 # go package spec
 
-declare -r PKG_NAME=go-1.4.3
-declare -r PKG_TARBALL=go1.4.3.src.tar.gz
-declare -r PKG_SRC=go
+declare -r PKG_NAME=go
+declare -r PKG_VERSION=1.4.3
+declare -r PKG_TARBALL=${PKG_NAME}${PKG_VERSION}.src.tar.gz
+declare -r PKG_URL=https://storage.googleapis.com/golang/go1.4.3.src.tar.gz
+declare -r PKG_SIG=sha1:486db10dc571a55c8d795365070f66d343458c48
+declare -r PKG_SRC=${PKG_NAME}
 declare -r PKG_BUILD_IN_SRC=yes
 
 # There is no configure step.

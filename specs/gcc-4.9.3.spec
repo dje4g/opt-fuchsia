@@ -1,9 +1,10 @@
 # gcc package support
 
-declare -r PKG_NAME=gcc-4.9.3
-declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
-declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=${PKG_NAME}.patches
+declare -r PKG_NAME=gcc
+declare -r PKG_VERSION=4.9.3
+declare -r PKG_TARBALL=${PKG_NAME}-${PKG_VERSION}.tar.gz
+declare -r PKG_URL=$OPT_URL_GNU/$PKG_NAME/$PKG_TARBALL
+declare -r PKG_PATCHES=${PKG_NAME}-${PKG_VERSION}.patches
 
 # gcc's configure is extra complicated, so use our own version.
 # gcc 4.9.? has a bug where not specifying --target (when it should

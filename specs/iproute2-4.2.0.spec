@@ -1,9 +1,11 @@
 # iproute2 package spec
 
-declare -r PKG_NAME=iproute2-4.2.0
-declare -r PKG_TARBALL=${PKG_NAME}.tar.xz
-declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=${PKG_NAME}.patches
+declare -r PKG_NAME=iproute2
+declare -r PKG_VERSION=4.2.0
+declare -r PKG_TARBALL=${PKG_NAME}-${PKG_VERSION}.tar.xz
+declare -r PKG_URL=https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-4.3.0.tar.xz
+declare -r PKG_SIG=md5sum:1a2bbb80cfc7ab3f3e987e18b3207c2f
+declare -r PKG_PATCHES=${PKG_NAME}-${PKG_VERSION}.patches
 declare -r PKG_BUILD_IN_SRC=yes
 
 # There is no configure step.

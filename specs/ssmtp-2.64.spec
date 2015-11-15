@@ -1,9 +1,11 @@
 # curl package spec
 
-declare -r PKG_NAME=ssmtp-2.64
-declare -r PKG_TARBALL=${PKG_NAME}.tar.bz2
-declare -r PKG_SRC=${PKG_NAME}
-declare -r PKG_PATCHES=${PKG_NAME}.patches
+declare -r PKG_NAME=ssmtp
+declare -r PKG_VERSION=2.64
+declare -r PKG_TARBALL=${PKG_NAME}_${PKG_VERSION}.orig.tar.bz2
+declare -r PKG_URL=http://mirrors.kernel.org/debian/pool/main/s/ssmtp/ssmtp_2.64.orig.tar.bz2
+declare -r PKG_SIG=md5sum:65b4e0df4934a6cd08c506cabcbe584f
+declare -r PKG_PATCHES=${PKG_NAME}-${PKG_VERSION}.patches
 #declare -r PKG_BUILD_IN_SRC=yes
 
 # ssmtp configure doesn't like passing CFLAGS on the command line.

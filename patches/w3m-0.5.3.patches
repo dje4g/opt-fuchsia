@@ -1,0 +1,5 @@
+# patch set for w3m
+# See ./README.
+ 
+replace:config.sub:config.sub
+patch:w3m-0.5.3-bdwgc72-1.patch

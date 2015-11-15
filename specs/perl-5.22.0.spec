@@ -1,8 +1,10 @@
 # perl package spec
 
-declare -r PKG_NAME=perl-5.22.0
-declare -r PKG_TARBALL=${PKG_NAME}.tar.gz
-declare -r PKG_SRC=${PKG_NAME}
+declare -r PKG_NAME=perl
+declare -r PKG_VERSION=5.22.0
+declare -r PKG_TARBALL=${PKG_NAME}-${PKG_VERSION}.tar.bz2
+declare -r PKG_URL=http://www.cpan.org/src/5.0/perl-5.22.0.tar.bz2
+declare -r PKG_SIG=md5sum:f67b152160431b3180fb766bdc2d02e2
 declare -r PKG_BUILD_IN_SRC=yes
 
 # perl has a differently named configure script, bleah

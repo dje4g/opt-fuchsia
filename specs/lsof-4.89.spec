@@ -1,8 +1,12 @@
 # lsof package spec
+# TODO: PKG_URL is tarball of tarball
 
-declare -r PKG_NAME=lsof-4.89
-declare -r PKG_TARBALL=lsof_4.89.tar.xz
-declare -r PKG_SRC=lsof_4.89/lsof_4.89_src
+declare -r PKG_NAME=lsof
+declare -r PKG_VERSION=4.89
+declare -r PKG_TARBALL=${PKG_NAME}_${PKG_VERSION}.tar.xz
+declare -r PKG_URL=ftp://sunsite.ualberta.ca/pub/Mirror/lsof/lsof_4.89.tar.bz2
+declare -r PKG_SIG=md5sum:1b9cd34f3fb86856a125abbf2be3a386
+declare -r PKG_SRC=${PKG_NAME}_${PKG_VERSION}/${PKG_NAME}_${PKG_VERSION}_src
 declare -r PKG_BUILD_IN_SRC=yes
 
 pkg_configure() {
