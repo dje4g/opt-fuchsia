@@ -11,6 +11,8 @@ DESTDIR =
 
 INSTALL = @INSTALL@
 
+WORLD_LIST = opt-world.list
+
 PATCHFILES = \
 	$(srcdir)/patches/README \
 	$(srcdir)/patches/config.sub \
@@ -32,6 +34,7 @@ distclean:
 install:
 	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)$(prefix)/src/patches
 	$(SHELL) $(srcdir)/mkinstalldirs $(DESTDIR)$(prefix)/src/specs
+	$(INSTALL) -m 0644 $(srcdir)/$(WORLD_LIST) $(DESTDIR)$(prefix)/src/$(WORLD_LIST)
 	for f in $(PATCHFILES) ; \
 	do \
 	  $(INSTALL) -m 0644 $$f $(DESTDIR)$(prefix)/src/patches/$$(basename $$f); \
