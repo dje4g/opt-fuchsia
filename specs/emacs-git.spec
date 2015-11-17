@@ -19,6 +19,5 @@ pkg_configure() {
 	--with-gameuser=:games \
 	--without-sound \
 	--without-x \
-	--without-xml2 \
 	--without-file-notification
 }
