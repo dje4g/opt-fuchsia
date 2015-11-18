@@ -18,7 +18,7 @@ native-tools-0.2
 # but for simplicity we stick with the current gcc.
 
 # Libraries that are dependencies of subsequent tools needed for builds.
-db.1.85
+db-1.85
 missing-libc-0.1
 readline-6.3
 gzip-1.6
@@ -91,6 +91,7 @@ ssmtp-2.64
 strace-4.10
 sudo-1.8.14
 time-1.7
+unzip-6.0
 vim-7.4
 w3m-0.5.3
 wget-1.16.3
