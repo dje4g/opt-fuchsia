@@ -1,0 +1,4 @@
+# patch set for popt
+# See ./README.
+ 
+replace:config.sub:config.sub

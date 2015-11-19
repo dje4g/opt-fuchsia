@@ -1,0 +1,4 @@
+# patch set for gptfdisk
+# See ./README.
+ 
+patch:gptfdisk-makefile.patch
