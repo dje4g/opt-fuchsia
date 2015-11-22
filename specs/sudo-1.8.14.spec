@@ -11,5 +11,6 @@ declare -r PKG_PATCHES=${PKG_NAME}-${PKG_VERSION}.patches
 
 pkg_stage() {
     std_stage \
-	INSTALL_OWNER=
+	INSTALL_OWNER= \
+	"$@"
 }

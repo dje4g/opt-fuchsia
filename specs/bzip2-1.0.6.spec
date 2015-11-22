@@ -23,5 +23,6 @@ pkg_make() {
 
 pkg_stage() {
     std_stage \
-	PREFIX="\$(DESTDIR)/${OPT_ROOT}"
+	PREFIX="\$(DESTDIR)/${OPT_ROOT}" \
+	"$@"
 }

@@ -27,5 +27,6 @@ pkg_make() {
 
 pkg_stage() {
     std_stage \
-	install-doc install-help
+	install-doc install-help \
+	"$@"
 }
