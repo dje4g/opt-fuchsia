@@ -3,7 +3,7 @@
 declare -r PKG_NAME=man-pages
 declare -r PKG_VERSION=4.02
 declare -r PKG_TARBALL=${PKG_NAME}-${PKG_VERSION}.tar.xz
-declare -r PKG_URL=$OPT_URL_GNU/$PKG_NAME/$PKG_TARBALL
+declare -r PKG_URL=https://www.kernel.org/pub/linux/docs/man-pages/man-pages-4.02.tar.xz
 declare -r PKG_SIG=md5sum:6c5692af39eb5fe468a8bd1f110b0edd
 declare -r PKG_BUILD_IN_SRC=yes
 
