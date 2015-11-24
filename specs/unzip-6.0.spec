@@ -20,8 +20,7 @@ pkg_make() {
 }
 
 pkg_stage() {
-    make install \
+    make -f unix/Makefile install \
 	 prefix=${DESTDIR}${OPT_ROOT} \
-	 MANDIR=${DESTDIR}${OPT_ROOT}/share/man/man1 \
-	-f unix/Makefile install
+	 MANDIR=${DESTDIR}${OPT_ROOT}/share/man/man1
 }
