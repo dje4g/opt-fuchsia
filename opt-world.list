@@ -20,6 +20,7 @@ native-tools-0.2
 # Libraries that are dependencies of subsequent tools needed for builds.
 db-1.85
 missing-libc-0.1
+popt-1.16
 readline-6.3
 gzip-1.6
 bzip2-1.0.6
@@ -78,6 +79,7 @@ expect-5.45
 gdb-7.10
 gettext-0.19.6
 git-2.6.1
+gptfdisk-1.0.1
 groff-1.22.3
 grub-2.02~beta2
 iproute2-4.2.0
@@ -85,6 +87,7 @@ less-451
 lsof-4.89
 lynx-2.8.7
 man-db-2.7.2
+man-pages-4.02
 parted-3.2
 patch-2.7.5
 ssmtp-2.64
@@ -120,3 +123,7 @@ which-2.21
 
 # bash
 # ssl
+
+# These are hand-made for various reasons.
+
+# git-manpages-2.6.1
