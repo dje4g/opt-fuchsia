@@ -1,0 +1,24 @@
+--- file-5.25/src/apprentice.c.~1~	2015-09-16 13:51:42.000000000 +0000
++++ file-5.25/src/apprentice.c	2015-11-25 00:25:52.600845444 +0000
+@@ -548,14 +548,18 @@ apprentice_unmap(struct magic_map *map)
+ 	switch (map->type) {
+ #ifdef QUICK
+ 	case MAP_TYPE_MMAP:
+-		if (map->p)
++		if (map->p && map->p != MAP_FAILED)
+ 			(void)munmap(map->p, map->len);
+ 		break;
+ #endif
+ 	case MAP_TYPE_MALLOC:
+-		free(map->p);
+-		for (i = 0; i < MAGIC_SETS; i++)
++		for (i = 0; i < MAGIC_SETS; i++) {
++			if ((char *)map->magic[i] >= (char *)map->p &&
++			    (char *)map->magic[i] < (char *)map->p + map->len)
++				continue;
+ 			free(map->magic[i]);
++		}
++		free(map->p);
+ 		break;
+ 	case MAP_TYPE_USER:
+ 		break;

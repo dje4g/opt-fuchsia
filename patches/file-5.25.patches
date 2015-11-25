@@ -2,3 +2,4 @@
 # See ./README.
  
 replace:config.sub:config.sub
+patch:file-apprentice-unmap.patch
