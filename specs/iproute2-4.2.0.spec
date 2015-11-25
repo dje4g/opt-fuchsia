@@ -15,8 +15,9 @@ pkg_configure() {
 }
 
 pkg_make() {
-    make \
+    make -j$OPT_PARALLELISM \
 	CC=${OPT_HOST_SYSTEM}-gcc \
+	CCOPTS="-g -O2" \
 	AR=${OPT_HOST_SYSTEM}-ar \
 	PREFIX=$OPT_ROOT \
 	CONFDIR=${OPT_ROOT}/etc \
@@ -30,7 +31,9 @@ pkg_stage() {
 	CC=${OPT_HOST_SYSTEM}-gcc \
 	AR=${OPT_HOST_SYSTEM}-ar \
 	PREFIX=$OPT_ROOT \
-	CONFDIR=$OPT_ROOT/etc \
+	SBINDIR=$OPT_ROOT/sbin \
+	CONFDIR=$OPT_ROOT/etc/iproute2 \
+	ARPDDIR=$OPT_ROOT/var/lib/arpd \
 	EXTRA_DEFINES=-DHAVE_MUSL \
 	DBM_INCLUDE=${OPT_ROOT}/include
 }
