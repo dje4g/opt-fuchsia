@@ -1,0 +1,8 @@
+# patch set for net-tools
+# See ./README.
+ 
+patch:net-tools-cvs-20101030-remove_dups-1.patch
+patch:net-tools-musl.patch
+copy:net-tools-config.h:config.h
+copy:net-tools-config.make:config.make
+copy:net-tools-config.status:config.status
