@@ -1,4 +1,7 @@
 # sudo package spec
+# TODO(dje): DESTDIR isn't treated consistently.
+# E.g., etc files are not currently installed (which isn't a bad thing per se - at least we
+# don't overwrite potentially hand-modified ones).
 
 declare -r PKG_NAME=sudo
 declare -r PKG_VERSION=1.8.14p3
